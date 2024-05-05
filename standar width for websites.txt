@@ -1,0 +1,69 @@
+<container>
+///
+Don't design for one size. Window sizes vary. Don't assume screen size equals windows size. 
+Design for a reasonable minimum, but assume it will adjust.
+///
+
+/Use responsive design and liquid layouts./
+
+///
+Treat mobile as a first-class citizen. You are getting more traffic from mobile devices all the time. These introduce even more screen sizes.
+ You can still optimize for 960,
+ but using responsive web design techniques means your page will adjust based on the screen size.
+///
+
+Common Screen Resolutions for Mobile in 2023:
+360×800   (11.01%)
+390×844   (7.92%)
+414×896    (5.55%)
+393×873     (5.26)
+412×915      (5%)
+
+Common Screen Resolutions for Desktop in 2023
+According to the Worldwide Screen Resolution Stats September 2023, 
+the most common screen resolutions across mobile, desktop, and tablet are:
+
+1920×1080   (22.18%)
+1366×768      (14.04%)
+1440×900      (6.41%)
+1280×720       (5.45%)
+1280×1024    (4.52%)
+
+////
+Optimize for 1024x768. For most sites this will cover most visitors.
+ Most logs show that 92-99% of your visits will be over 1024 wide.
+While 1280 is increasingly common, there are still lots at 1024 and some below that.
+Optimize for this but don't ignore the others.
+////
+
+</container>
+
+<responsive>
+Best widths for responsive:
+
+/* for-phone-only */
+@media (max-width: 599px) { }
+
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) { }
+
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) { }
+
+
+/* for-desktop-up */
+@media (min-width: 1200px) { }
+
+/* for-medium-desktop-up */
+@media (min-width: 1400px) { }
+
+
+/* for-big-desktop-up */
+@media (min-width: 1800px) { }
+</responsive>
+
+
+
+
